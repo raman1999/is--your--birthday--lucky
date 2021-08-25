@@ -34,15 +34,15 @@ form.addEventListener("submit", (e) => {
   section.classList.add("lucky-section");
 
   if (areYouLucky) {
-    result.textContent = "Congratulations, You're lucky person.";
+    result.textContent = "Woww, You're lucky .";
     img.style.display = "block";
-    img.src = "/assets/happy.svg";
+    img.src = "/assets/happy.png";
   } else {
-    result.textContent = `OHHH! You're missed by ${
+    result.textContent = `Oops! You missed by ${
       dateSum % luckyNumber
     } days from being lucky.`;
 
     img.style.display = "block";
-    img.src = "/assets/sad.svg";
+    img.src = "/assets/sad.png";
   }
 });
