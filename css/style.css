@@ -8,19 +8,19 @@
 }
 
 :root {
-  --bgColor: #eee;
+  --bgColor: rgba(173,216,230,0.8);
   --white: #fff;
   --footercolor:rgba(23,23,23,0.9);
-  --boxShadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.32);
+  
 }
 body {
-  background-color: var(--bgColor);
+  
   font-family: "Open Sans", sans-serif;
   background-image: url("/assets/bday.png");
 }
 
 .container {
-  max-width: 600px;
+  max-width: 90vh;
   margin: 0 auto;
   padding-top: 1.5rem;
   
@@ -41,9 +41,10 @@ body {
 
 .main {
   margin-top: 1.5rem;
-  background-color:lightblue;
+  background-color:var(--bgColor);
   padding: 2rem 0;
-  box-shadow:var(--boxShadow);
+  
+
 }
 
 .form {
@@ -72,20 +73,21 @@ input {
   border: 1px solid black;
   font: inherit;
   padding: 1rem;
-  box-shadow: var(--boxShadow);
+  
   transition: all 0.3s;
   cursor: pointer;
 }
 .btn:hover {
   background-color: var(--white);
-  border: 1px solid black;
+  border: 2px solid black;
   color: black;
+  
 }
 
 .lucky-section {
   background-color: var(--white);
   padding: 2rem 0;
-  box-shadow: var(--boxShadow);
+ 
   margin: 1.5rem auto;
 }
 
@@ -95,24 +97,12 @@ input {
   font-size: 2rem;
 }
 .main{
-  height:400px;
+  height:60vh;
 }
 
 
-.list-item {
-  margin: 0 0.5rem;
-}
 
-.list-link {
-  text-decoration: none;
-  color: black;
-}
 
-small {
-  display: block;
-  text-align: center;
-  columns: #777;
-}
 
 .img {
   width: 60%;
@@ -123,20 +113,18 @@ small {
   position: absolute;
   bottom: 4rem;
   left: 3rem;
-  z-index: ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
+  
 }
 
 .model-container {
   color:white;
-  max-width: 300px;
+  max-width: 20vw;
   min-height: 30vh;
   background-color:black ;
   text-align: center;
   padding: 1rem;
-  box-shadow: var(--boxShadow);
+
 }
 
 .model-btn {

@@ -12,15 +12,15 @@ model.style.display = "none";
 
 setTimeout(() => {
   model.style.display = "";
-}, 5000);
+}, 3000);
 
 modelBtn.addEventListener("click", () => {
   model.style.display = "none";
 });
 
 form.addEventListener("submit", (e) => {
+ 
   e.preventDefault();
-
   const dateSum = bday.value.split("-").reduce((a, c) => {
     return Number(a) + Number(c);
   }, 0);
@@ -46,3 +46,5 @@ form.addEventListener("submit", (e) => {
     img.src = "/assets/sad.png";
   }
 });
+
+
