@@ -21,11 +21,17 @@ modelBtn.addEventListener("click", () => {
 form.addEventListener("submit", (e) => {
  
   e.preventDefault();
-  const dateSum = bday.value.split("-").reduce((a, c) => {
-    return Number(a) + Number(c);
-  }, 0);
-  const luckyNumber = Number(luckyNum.value);
+  const date= bday.value.replaceAll("-","");
+ 
+  let dateSum=0;
+  for(let index of date)
+{
+  dateSum+=Number(index);
+}
 
+
+  const luckyNumber = Number(luckyNum.value);
+console.log(dateSum);
   const areYouLucky = dateSum % luckyNumber === 0 ? true : false;
   console.log(areYouLucky);
   luckyNum.value = "";

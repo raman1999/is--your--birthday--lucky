@@ -62,7 +62,7 @@ label {
 }
 input {
   width: 60%;
-  font: inherit;
+  font-size: 1.2rem;
   padding: 0.5rem;
 }
 
@@ -71,7 +71,7 @@ input {
   background-color: black;
   color: var(--white);
   border: 1px solid black;
-  font: inherit;
+  font-size:1.1rem;
   padding: 1rem;
   
   transition: all 0.3s;
@@ -139,7 +139,7 @@ input {
   color: grey;
 }
 
-.model-text {
+ .model-text {
   padding: 15px 0;
   text-align: left;
   font-size: 0.8rem;
